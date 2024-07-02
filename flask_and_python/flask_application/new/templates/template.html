@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Flask Parent Template</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
+    <link rel="stylesheet" href="{{ url_for('static',     filename='css/template.css') }}">
+
+</head>
+<body>
+    <header>
+        <div class="container p-4">
+            <navbar>
+                <h1 class="logo text-xl border-solid border-2 border-sky-500">First Web App</h1>
+                <li><a href="https://github.com/dashboard" target="_blank">Github</a></li>
+            </navbar>
+            <strong>
+                <nav>
+                    <ul class="menu">
+                        <button><li><a href="http://127.0.0.1:5000/" class="hover:underline">Home</a></li></button>
+                        <br>
+                        <button><li><a href="http://127.0.0.1:5000/about" class="hover:underline">About</a></li></button>
+                        <br>
+                        <button><li><a href="http://127.0.0.1:5000/testing" class="hover:underline">Testing</a></li></button>
+                    </ul>
+                </nav>
+            </strong>
+        </div>
+    </header>
+</body>
+</html>
